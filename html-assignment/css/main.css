@@ -19,14 +19,11 @@ ul {
 li:nth-child(odd) {
     background-color: mediumseagreen;
 }
-nav {
-    background-color: palegreen;
-}
-nav:link {
+a[href] {
     text-decoration: none;
-    background-color: orange;
-    border: orchid;
+    background-color:mediumpurple;
+    border: 1px solid black;
 }
-nav:hover {
-    background-color: palevioletred;
+a[href]:hover {
+    background-color: orangered;
 }
