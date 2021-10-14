@@ -10,3 +10,17 @@ header, footer {
     color: mediumpurple;
     font-size: 32px;
 }
+#my-image {
+    box-shadow: 0 0 2px 1px black;
+}
+ul {
+    list-style: square;
+}
+li:nth-child(odd) {
+    background-color: mediumseagreen;
+}
+nav {
+    text-decoration: none;
+    background-color: palegreen;
+    border: 1px orange, solid;
+}
