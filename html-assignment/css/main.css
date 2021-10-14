@@ -6,6 +6,7 @@ body {
 header, footer {
     background-color: chartreuse;
 }
-.site-title {
+#site-title {
     color: mediumpurple;
+    font-size: 32px;
 }
