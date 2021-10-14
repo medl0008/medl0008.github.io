@@ -20,7 +20,13 @@ li:nth-child(odd) {
     background-color: mediumseagreen;
 }
 nav {
-    text-decoration: none;
     background-color: palegreen;
-    border: 1px orange, solid;
+}
+nav:link {
+    text-decoration: none;
+    background-color: orange;
+    border: orchid;
+}
+nav:hover {
+    background-color: palevioletred;
 }
