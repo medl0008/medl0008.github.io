@@ -1,0 +1,36 @@
+/************************************************
+                Font Imports
+************************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+
+/* fonts can have multiple styles - in this case, the weights are 400 and 700 */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+/* Oswald has many more weights - 200, 300, 400, 500, 600, 700 - you only link to what you want to use */
+
+/* (normally, you'd import all the fonts at the same time from google */
+
+
+/************************************************
+                Font Styling
+************************************************/
+
+.fontTestA{
+    font-family: 'Comforter Brush', cursive;
+    font-size:40px;
+}
+
+.fontTestB{
+    font-family: 'Oswald', sans-serif;
+    /* font weight "400" is the default size, you don't have to set it - this is equivalent to "regular" */
+}
+
+.fontTestB p:last-child{
+    font-weight:700; /* based on the font family we downloaded */
+}
+
+.iconFontTest{
+    font-weight:bold;
+    font-size: 60px;
+    color: orange;
+}
