@@ -1,36 +1,527 @@
-/************************************************
-                Font Imports
-************************************************/
+/* styling for webpage */
 
-@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+html, body, div, span, applet, object, iframe, h1,
+h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* html5 for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* font info */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
-/* fonts can have multiple styles - in this case, the weights are 400 and 700 */
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
-/* Oswald has many more weights - 200, 300, 400, 500, 600, 700 - you only link to what you want to use */
-
-/* (normally, you'd import all the fonts at the same time from google */
-
-
-/************************************************
-                Font Styling
-************************************************/
-
-.fontTestA{
-    font-family: 'Comforter Brush', cursive;
-    font-size:40px;
+/*content stylings */
+html {
+    font-size: 16px;
+    font-family: 'Open Sans' , sans-serif;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    margin: 10px;
 }
 
-.fontTestB{
-    font-family: 'Oswald', sans-serif;
-    /* font weight "400" is the default size, you don't have to set it - this is equivalent to "regular" */
+/* header stylings */
+header {
+    position: relative;
+    margin: 5px 0;
+    background-color:#222;
+}
+.logo {
+    background-color:#c78c06;
+    display: block;
 }
 
-.fontTestB p:last-child{
-    font-weight:700; /* based on the font family we downloaded */
+/* nav stylings */
+ul {
+    flex-direction: column;
+    text-align: center;
+}
+li {
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: center;
+    font-size:24px;
+    display: block;
+    justify-content: space-evenly;
+    width:100%;
 }
 
-.iconFontTest{
-    font-weight:bold;
-    font-size: 60px;
-    color: orange;
+a {
+    color:#c78c06;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.hover {
+    background-color:#c78c06;
+    color:#222;
+    padding: 10px;
+
+}
+.searchbar {
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-basis:0;
+    flex-grow:1;
+    width: 100%-2px;
+    padding: 10px;
+    justify-content: center;
+}
+#search {
+    padding: 10px;
+    font-size: 15px;
+    float: left;
+    width: 80%;
+}
+.icon-zoom{
+    color:#c78c06;
+    border: 2px solid #c78c06;
+    padding: 10px;
+    width: 20px;
+    font-size: 17px;
+    position: relative;
+} 
+/* banner stylings */ 
+.bannertext {
+    background-color:rgba(34, 34, 34, 0.72);
+    position: absolute;
+    top: 50px;
+    color:white;
+    width: 100%;
+    padding: 10px;
+}
+
+/* images styling */
+.header_image{
+    width:100%;
+}
+.about_image {
+    width: 100%;
+}
+.digital_image {
+    width: 100%;
+}
+.marketing_image {
+    width: 100%;
+}
+.video_image {
+    width: 100%;
+}
+.web_image {
+    width:100%;
+}
+.print_image {
+    width: 100%;
+}
+.vision_image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.john_image {
+    width :100%;
+}
+.bob_image {
+    width: 100%;
+}
+.banner {
+    position: relative;
+}
+
+/* body stylings */
+h1 {
+    font-size: 90px;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+h2 {
+    font-size: 34px;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+h3 {
+    font-size: 32px;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom:10px;
+    padding:10px;
+    border-bottom: 2px solid #c78c06;
+    border-color:#c78c06;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+section {
+    padding: 10px;
+    margin: 5px 0;
+    background-color:#ffe6ac;
+}
+p {
+    display: inline;
+    padding: 10px;
+    margin: 10px;
+    line-height: 1.5;
+}
+footer {
+    color:#c78c06;
+    text-align: left;
+    padding: 10px;
+    background-color:#222;
+}
+button{
+    background-color:#222;
+    border :none;
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    font-size:16px;
+    }
+#connect {
+    background-color:#c78c06;
+    border: none;
+    color:#222;
+    padding: 32px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 28px;
+    margin: 22px;
+}
+.vision {
+    position: relative;
+}
+.visiontext {
+    position: absolute;
+    top: 50px;
+    color:white;
+}
+
+#learnbutton {
+    background-color:#222;
+    border:2px solid #c78c06;
+    color:white;
+    padding:15px 32px;
+    text-align: center;
+    display: block;
+    font-size: 26px;
+    margin:20px;
+}
+.icon-right{
+    padding:10px;
+
+}
+.services{
+    display:flex;
+}
+.contact {
+    padding:10px;
+}
+#fullname{
+    display:flex;
+    width:99%;
+   margin: 10px;
+
+}
+#email{
+    display:flex;
+    margin: 10px;
+    width:99%;
+}
+#message{
+    display:flex;
+    margin: 10px;
+    width:99%;
+}
+#submit{
+    display: flex;
+    background-color:#222;
+    color:#c78c06;
+    margin: 10px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.table{
+    background-color:white;
+}
+table{
+    border: 1px solid black;
+    width:100%;
+}
+thead{
+    border: 1px solid black;
+}
+th{
+    border: 1px solid black;
+    padding:10px;
+    background-color:#ffe6ac;
+}
+td{
+    border: 1px solid black;
+    padding:10px;
+}
+/* desktop stylings*/
+
+@media screen and (min-width:760px){
+    .container{
+        margin:0 auto;
+        width:80%;
+        max-width:1200px;
+    }
+    .desktophead {
+        width: 100%;
+        position: relative;
+        padding: 80px;
+
+    }
+    .logo {
+        display: inline-block;
+        background-color:#222;
+        position: absolute;
+        top: 25px;
+        left: 40px;
+        bottom: 55px;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        justify-items: space-around;
+        position: absolute;
+        top: 35px;
+        left: 150px;
+        width:50%;
+
+    }
+    li{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 16px;
+        padding: 10px;
+
+    }
+    a{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    } 
+    .searchbar {
+        display: flex;
+        top: 50px;
+        left: 850px;
+        flex-direction :row;
+        position: absolute;
+        padding-bottom: 100px;
+    }
+    .searchbutton {
+        display: flex;
+        position: absolute;
+        top: -10px;
+        left: 170px;
+    }
+    .bannertext {
+        width: 90%;
+        display: block;
+        justify-items: center;
+        margin: 22px;
+        margin-left: 29px;
+        padding: 10px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    .about {
+        display: flex;
+        align-content: space-between; 
+    }
+   .about_image{
+        width:30%;
+        margin-left: 30px;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        float: left;
+        display: flex;
+        flex-wrap: wrap;
+        display: column;
+    }
+    .abouttext {
+        display: flex;
+        display: inline-block;
+        flex-direction: column;
+    }
+
+/* services */
+    h2 {
+        margin-left: 35px;
+        padding: 10px;
+    }
+    button {
+        padding:10px;
+    }
+    .services {
+        width: 85%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+        align-items: center;
+        gap: 0.5em 0.5em;
+    }
+    .services1{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .services2 {
+        grid-column-start: 4;
+        grid-column-end: 7;
+    } 
+    .services3 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .services4 {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+    .services5 {
+        grid-column-start: 5;
+        grid-column-end: 7;
+}
+/* team */
+.john_image{
+    width:50%;
+    display:flex;
+}
+
+.john {
+    display: flex;
+    flex-direction: row;
+}
+.johntext {
+    padding: 8px;
+}
+
+.aboutjohn {
+    font-size: 18px;
+}
+
+.bob {
+    display:flex;
+    flex-direction: row-reverse;
+}
+.bobtext {
+    padding: 8px;
+}
+
+.bob_image {
+    width: 50%;
+}
+.bobname {
+    order:4;
+}
+.bobjob {
+    display:flex;
+    order:3;
+}
+.aboutbob {
+    display:flex;
+    flex-direction: row-reverse;
+    font-size: 18px;
+}
+.form {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:0.5em;
+}
+.contact {
+    display:grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.table{
+    display:grid;
+    order: 3;
+    grid-column-start:1;
+    grid-column-end: 5;
+    padding:10px;
+
+}
+.mapembed {
+    display:grid;
+    grid-column-start: 3;
+    grid-column-end: 6;
+    width:100%;
+}
+iframe{
+    width:100%;
+}
+/* buttons! */
+.digitalbutton {
+    background-color: #222;
+}
+.marketingbutton {
+    background-color: #222;
+}
+.videobutton {
+    background-color: #222;
+}
+.webbutton {
+    background-color: #222;
+}
+.printbutton {
+    background-color: #222;
+}
+.button2 {
+    width:100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
