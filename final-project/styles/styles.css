@@ -55,6 +55,7 @@ html {
     width: 100vw;
     height: 100vh;
     margin: 10px;
+    max-width: 1200px;
 }
 
 /* header stylings */
@@ -77,7 +78,7 @@ li {
     flex-grow: 1;
     flex-basis: 0;
     text-align: center;
-    font-size:24px;
+    font-size: 24px;
     display: block;
     justify-content: space-evenly;
     width:100%;
@@ -260,33 +261,33 @@ button{
 
 }
 .services{
-    display:flex;
+    display: block;
 }
 .contact {
     padding:10px;
 }
 #fullname{
     display:flex;
-    width:99%;
+    width: 100%;
    margin: 10px;
 
 }
 #email{
     display:flex;
     margin: 10px;
-    width:99%;
+    width: 100%;
 }
 #message{
     display:flex;
     margin: 10px;
-    width:99%;
+    width: 100%;
 }
 #submit{
     display: flex;
     background-color:#222;
     color:#c78c06;
     margin: 10px;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: bold;
 }
 .table{
@@ -298,15 +299,16 @@ table{
 }
 thead{
     border: 1px solid black;
+    padding: 20px;
 }
 th{
     border: 1px solid black;
-    padding:10px;
+    padding: 20px;
     background-color:#ffe6ac;
 }
 td{
     border: 1px solid black;
-    padding:10px;
+    padding: 20px;
 }
 /* desktop stylings*/
 
